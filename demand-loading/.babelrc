@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      "./babel-plugin-demand-loading.js",
+      {
+        "libraryName": "element-ui"
+      }
+    ]
+  ]
+}
