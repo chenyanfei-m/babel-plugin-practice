@@ -1,3 +1,5 @@
-# console-clear
-随手撸的一个简单的去除js代码中console的`babel`插件   
-全局安装`babel`, 然后`babel index.js`就可以看到结果啦
+# 记录学习babel插件的过程以及一些实现的babel插件
+
+## console-clear 用于清除代码中的console，支持ignore选项
+
+## demand-loading 按需加载插件

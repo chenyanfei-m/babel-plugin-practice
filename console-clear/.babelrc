@@ -1,7 +1,7 @@
 {
   "plugins": [
     [
-      "./console-clear",
+      "./babel-plugin-console-clear.js",
       {
         "ignore": [
           "time",
