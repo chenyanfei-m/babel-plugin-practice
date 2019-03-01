@@ -16,8 +16,8 @@ module.exports = function ({ types: t }) {
         if (path.node.source.value !== libraryName) return
         const { specifiers } = path.node
         // 筛选特征
-        const allImportSpecifier = specifiers.every(ele => ele.type === 'ImportSpecifier')
-        if (!allImportSpecifier) return
+        const allAreImportSpecifier = specifiers.every(ele => ele.type === 'ImportSpecifier')
+        if (!allAreImportSpecifier) return
         // 遍历所有specifier, 将其属性传入genImportDeclaration函数生成一个或多个ImportDeclaration
         const ImportDeclarations = specifiers.map(ele => genImportDeclaration(ele, libraryName))
         // 替换原来的ImportDeclaration
